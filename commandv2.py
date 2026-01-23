@@ -26,8 +26,8 @@ class Command:
 
     class Check:
         @staticmethod
-        def is_andyinnie(message):
-            return message.author.id == util.ANDYINNIE_ID
+        def is_lizzyinnie(message):
+            return message.author.id == util.LIZZYINNIE_ID
 
         @staticmethod
         def impossible_check(message):
@@ -246,7 +246,7 @@ def load(core):
 
     async def botinfo(message, args):
         user = core.bot.user
-        andyinnie = core.bot.get_user(util.ANDYINNIE_ID)
+        lizzyinnie = core.bot.get_user(util.LIZZYINNIE_ID)
         guild = message.channel.guild
 
         embed = discord.Embed(
@@ -261,16 +261,16 @@ def load(core):
             value=f'`{get_prefix(guild.id)}` ({guild.name})'
         ).add_field(
             name='Owner',
-            value=f'{andyinnie.name}#{andyinnie.discriminator}'
+            value=f'{lizzyinnie.name}'
         ).add_field(
             name='Created on',
-            value=str(user.created_at.astimezone(util.PACIFIC_TIME).date())
+            value=str(user.created_at.astimezone(util.MOUNTAIN_TIME).date())
         ).add_field(
             name='Bot Version',
             value=util.BOT_VERSION
         ).add_field(
             name='Running on',
-            value='Ubuntu 20.04'
+            value='Ubuntu 24.04'
         ).add_field(
             name='Joined Servers',
             value=str(len(core.bot.guilds))

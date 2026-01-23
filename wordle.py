@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 
 import discord
 
-from util import core, frequency_dict, remove_duplicates, ANDYINNIE_ID, now_dt, iferror, now_nums_only, ifinfo, \
+from util import core, frequency_dict, remove_duplicates, LIZZYINNIE_ID, now_dt, iferror, now_nums_only, ifinfo, \
     ifsuccess
 from responder import Responder
 
@@ -274,7 +274,7 @@ def load(core):
         print('registered wordle responder')
 
     async def update(message, args):
-        await run_analysis(ANDYINNIE_ID)
+        await run_analysis(LIZZYINNIE_ID)
         await message.delete()
 
     async def stats(message, args):

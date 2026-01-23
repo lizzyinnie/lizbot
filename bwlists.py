@@ -40,7 +40,7 @@ def load(core):
     async def updatelists(message, args):
         await message.channel.send(embed=util.ifinfo('Refreshing black/whitelists...'))
         update_lists()
-    register_command()('updatelists', updatelists, [commandv2.Command.Check.is_andyinnie])
+    register_command()('updatelists', updatelists, [commandv2.Command.Check.is_lizzyinnie])
 
     async def blacklist(message, args):
         try:
@@ -62,7 +62,7 @@ def load(core):
         table.insert([name, channel_id])
 
         update_lists()
-    register_command()('blacklist', blacklist, [commandv2.Command.Check.is_andyinnie])
+    register_command()('blacklist', blacklist, [commandv2.Command.Check.is_lizzyinnie])
 
     async def whitelist(message, args):
         try:
@@ -84,7 +84,7 @@ def load(core):
         table.insert([name, guild_id])
 
         update_lists()
-    register_command()('whitelist', whitelist, [commandv2.Command.Check.is_andyinnie])
+    register_command()('whitelist', whitelist, [commandv2.Command.Check.is_lizzyinnie])
 
     print('Loaded bwlists.py')
 

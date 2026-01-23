@@ -16,7 +16,7 @@ def load(core):
         after = not before
         core.exports.put('responder_toggle', after)
         await message.channel.send(embed=util.ifsuccess(f'Toggled message responders **{"on" if after else "off"}**'))
-    register_command()('toggleresponders', toggleresponders, [commandv2.Command.Check.is_andyinnie])
+    register_command()('toggleresponders', toggleresponders, [commandv2.Command.Check.is_lizzyinnie])
 
     async def alive(message, args):
         await message.channel.send(embed=util.ifinfo('bot is alive'))
@@ -27,7 +27,7 @@ def load(core):
         core.bot.close()
         print(f'Logging out on {util.now(date_first=True)}')
         exit(0)
-    register_command()('kill', kill, [commandv2.Command.Check.is_andyinnie])
+    register_command()('kill', kill, [commandv2.Command.Check.is_lizzyinnie])
 
     async def puppet(message, args):
         if len(args) < 2:
@@ -46,7 +46,7 @@ def load(core):
 
         channel = core.bot.get_channel(channel_id)
         await channel.send(' '.join(args[1:]))
-    register_command()('puppet', puppet, [commandv2.Command.Check.is_andyinnie])
+    register_command()('puppet', puppet, [commandv2.Command.Check.is_lizzyinnie])
 
     async def puppetdm(message, args):
         if len(args) < 2:
@@ -65,7 +65,7 @@ def load(core):
 
         user = core.bot.get_user(user_id)
         await user.send(' '.join(args[1:]))
-    register_command()('puppetdm', puppetdm, [commandv2.Command.Check.is_andyinnie])
+    register_command()('puppetdm', puppetdm, [commandv2.Command.Check.is_lizzyinnie])
 
     async def prefix(message, args):
         channel = message.channel
@@ -97,10 +97,10 @@ def load(core):
                                [guild_id, pref])
 
         await channel.send(embed=util.ifsuccess(f'Changed command prefix to: `{pref}`'))
-    register_command()('prefix', prefix, [commandv2.Command.Check.is_andyinnie])
+    register_command()('prefix', prefix, [commandv2.Command.Check.is_lizzyinnie])
 
     async def raiseexception(message, args):
         raise Exception
-    register_command()('raiseexception', raiseexception, [commandv2.Command.Check.is_andyinnie])
+    register_command()('raiseexception', raiseexception, [commandv2.Command.Check.is_lizzyinnie])
 
     print('Loaded admincommands.py')

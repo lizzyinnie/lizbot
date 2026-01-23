@@ -113,7 +113,7 @@ def load_command(core):
             pass
             await channel.send(embed=util.iferror(lang()('error.invalid.generic', 'module')))
 
-    register_command()('reload', reload_command, [command_class().Check.is_andyinnie])
+    register_command()('reload', reload_command, [command_class().Check.is_lizzyinnie])
 
 
 def load(core):

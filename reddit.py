@@ -8,8 +8,8 @@ from prawcore import NotFound
 
 import util
 
-reddit = praw.Reddit('andyinnie-test',
-                     user_agent=f'Ubuntu 20.04:@andyinnie-test#5431:v.{util.BOT_VERSION} (by u/andyinnie)')
+reddit = praw.Reddit('lizzyinnie-test',
+                     user_agent=f'Ubuntu 20.04:@lizzyinnie-test#5431:v.{util.BOT_VERSION} (by u/andyinnie)')
 
 
 def load(core):

@@ -10,9 +10,9 @@ import discord
 
 from lang import lang
 
-ANDYINNIE_ID = 428332264204533770
+LIZZYINNIE_ID = 428332264204533770
 WORDLE_SERVER_ID = 1042608545666965525
-PACIFIC_TIME = pytz.timezone('America/Los_Angeles')
+MOUNTAIN_TIME = pytz.timezone('America/Denver')
 BOT_VERSION = '2.4'
 
 core = sys.modules['__main__']
@@ -21,7 +21,7 @@ core = sys.modules['__main__']
 class Color:
     red = 0xED4245
     yellow = 0xF1C40F
-    andyinnie = 0x2CC2C2
+    lizzyinnie = 0x2CC2C2
 
     @staticmethod
     def good_random(seed=None):
@@ -83,7 +83,7 @@ def now_nums_only():
 
 
 def now_dt():
-    return datetime.datetime.now(pytz.timezone('America/Los_Angeles'))
+    return datetime.datetime.now(pytz.timezone('America/Denver'))
 
 
 def embed_lambda(title, color):
@@ -107,7 +107,7 @@ class FakeMessage:
         self.channel = channel
 
 
-def is_time(utc, strtime, military=False, tz=PACIFIC_TIME):
+def is_time(utc, strtime, military=False, tz=MOUNTAIN_TIME):
     as_tz = utc.astimezone(tz)
 
     split = strtime.split(':')

@@ -23,7 +23,7 @@ root = {
             'generic': 'Invalid {0}'
         },
         'internal': 'Internal error (aka developer fucked up)',
-        'unknown': 'Unknown error, please contact andyinnie.'
+        'unknown': 'Unknown error, please contact lizzyinnie.'
     },
     'supply': {
         'number': 'Please supply a number.',

@@ -28,7 +28,7 @@ def load(core):
 
         embed = discord.Embed(
             title=f'Message edited in #{after.channel.name}',
-            color=util.Color.andyinnie,
+            color=util.Color.lizzyinnie,
             timestamp=util.now_dt()
         ).set_author(
             name=f'{author.name}#{author.discriminator}',

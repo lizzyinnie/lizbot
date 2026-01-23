@@ -13,7 +13,7 @@ from spotipy.cache_handler import MemoryCacheHandler
 from util import ifinfo, now_dt, shorten, frequency_dict, iferror, register_slash_command, \
     respond_or_edit
 
-REDIRECT_URI = 'https://andrewjm.me/spotify'
+REDIRECT_URI = 'https://lizzyinnie.me/spotify'
 SPOTIFY_COLOR = 0x1DB954
 
 waiting_on_auth = dict()
