@@ -1,4 +1,4 @@
-# andybot
+# lizbot
 
 Source code for the @lizzyinnie-test Discord bot using [discord.py](https://github.com/Rapptz/discord.py). For personal use in my own servers.
 
